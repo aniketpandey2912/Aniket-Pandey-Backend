@@ -4,7 +4,8 @@ const { AdsModel } = require("../model/ads.model");
 const adsRouter = express.Router();
 
 adsRouter.get("/", async (req, res) => {
-  let { keyword } = req.body;
+  let { keyword } = req.headers;
+  // console.log(keyword);
   try {
     let prods = [];
     if (prods.length === 0) {
