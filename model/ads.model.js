@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const adsSchema = mongoose.Schema(
   {
+    _id: Number,
     name: String,
     primaryText: String,
     headline: String,
